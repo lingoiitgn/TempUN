@@ -8,7 +8,10 @@ Dataset Link: [Drive](https://drive.google.com/drive/folders/1Qc-xqoWOACZI1uUxcK
 ## Zeroshot
 ### Open-source models:
 #### Using vLLM:
-We have utillized vLLM for getting inference from `phi-2`, `mistral-instruct-v0.2`, and `llama-2-chat`. The code for inference is located in the `` file.
+We have utillized vLLM for getting inference from `phi-2`, `mistral-instruct-v0.2`, and `llama-2-chat`. The code for inference is located in the `inference/zeroshot/inf_vllm.py` file. To get inference run below command:
+
+    python inf_vllm.py --hub-model-name meta-llama/Meta-Llama-3-8B-Instruct --base-dir /path_to_csvs --out-dir /path_to_results --year 1947
+
 #### Using transformers:
 flan-t5-xl
 #### Using Groq:
