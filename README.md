@@ -18,5 +18,15 @@ We have performed model fine-tuning in three different paradigms:
 #### Using vLLM:
 At the time of performing inference, from all fine-tuned models only `phi-2`, `mistral-instruct`, `llama-2-chat`, and `llama-3-8b` were supported via **vLLM** (a fast and easy-to-use library for LLM inference). The code for inference is located in the `inference/after_FT/inf_vllm` directory.
 
+-The lora_to_original.py script is designed to merge a pre-trained base model with an adapter model (fine-tuned model) using Parameter-Efficient Fine-Tuning (PEFT) and then save the merged model.
+
+Performing Inference:
+
+    The code4.py script performs inference using the fine-tuned LLMs and saves the results. It reads prompts from CSV files, generates responses using the LLM, extracts specific answers from the responses, and saves the results to new CSV files.
+
+Orchestrating the Process:
+
+    The run.py script orchestrates the entire process. It loads different checkpoints of fine-tuned models, converts them using the lora_to_original.py script, and then performs inference using the code4.py script.
+
 
 More Details in the paper (Link Coming soon)
