@@ -15,7 +15,7 @@ parser.add_argument('--model', type=str, default='google/gemma-1.1-7b-it', help=
 parser.add_argument('--hub-model-name', type=str, default='google/gemma-1.1-7b-it', help='Model name')
 parser.add_argument('--base-dir', type=str, default='/path_to_csvs', help='Path to the csvs')
 parser.add_argument('--out-dir', type=str, default='/path_to_results', help='Path to the output directory')
-parser.add_argument('--year', type=int, default=1947, help='Year for which the inference is to be done')
+parser.add_argument('--year', type=int, default=1947, help='Year from which the inference is to be done')
 
 args = parser.parse_args()
 
