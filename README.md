@@ -23,11 +23,15 @@ At the time of performing inference, from all fine-tuned models only `phi-2`, `m
 - The `run.py` script orchestrates the entire process. It loads different checkpoints of fine-tuned models, converts them using the `lora_to_original.py` script, and then performs inference using the `code4.py` script.
 
 To get inference results, follow these steps:
-1. Modify the paths in the `lora_to_original.py`, `code4.py`, and `run.py` scripts to match your environment.
+1. Modify the paths in the `lora_to_original.py`, `code4.py`, and `run.py` scripts to match your environment and change the `model_name` to get inference from desired llm.
 2. Run the `run.py` script with the following command:
 
-          python run.py --model /path_to_fine-tuned_models
+       python run.py --model /path_to_fine-tuned_models
+
 
 #### Using transformers:
+We have used **transformers** to get inference from remaining llms of `flan-t5-xl`, `gemma-7b-it`, and `phi-3-medium-instruct`
+
+
 
 More Details in the paper (Link Coming soon)
