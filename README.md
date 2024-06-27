@@ -6,11 +6,14 @@ Dataset Link: [Drive](https://drive.google.com/drive/folders/1Qc-xqoWOACZI1uUxcK
 # Inference
 
 ## Zeroshot
+### Open-source models:
 #### Using vLLM:
-
+We have utillized vLLM for getting inference from `phi-2`, `mistral-instruct-v0.2`, and `llama-2-chat`. The code for inference is located in the `` file.
 #### Using transformers:
-
+flan-t5-xl
 #### Using Groq:
+gemma-1.1-7b-it, Meta-Llama-3-8B-Instruct, phi-3-medium-instruct, Mixtral-8x7B-Instruct-v0.1, Meta-Llama-3-70B-Instruct, gpt-3.5-turbo, gpt-4, and gemini-pro 
+### Closed-source models:
 
 ## After fine tuning
 We have performed model fine-tuning in three different paradigms:
