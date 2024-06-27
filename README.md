@@ -5,6 +5,12 @@ Dataset Link: [Drive](https://drive.google.com/drive/folders/1Qc-xqoWOACZI1uUxcK
 
 # Inference
 
-## After fine tuning:
+## Zeroshot:
 
+## After fine tuning:
+We have performed model fine-tuning in three different paradigms:
+
+    Yearwise Fine-Tuning (Y-FT)
+    Continual Learning (CL)
+    Random Fine-Tuning (R-FT)
 More Details in the paper (Link Coming soon)
