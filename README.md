@@ -5,14 +5,14 @@ Dataset Link: [Drive](https://drive.google.com/drive/folders/1Qc-xqoWOACZI1uUxcK
 
 # Inference
 
-## Zeroshot:
+## Zeroshot
 ### Using vLLM:
 
 ### Using transformers:
 
 ### Using Groq:
 
-## After fine tuning:
+## After fine tuning
 We have performed model fine-tuning in three different paradigms:
 
 1. Yearwise Fine-Tuning (Y-FT)
