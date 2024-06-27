@@ -31,7 +31,7 @@ yes_no_regex = re.compile(r"\b(yes|no)\b", re.IGNORECASE)
 
 ## vLLM code
 from vllm import LLM, SamplingParams
-llm = LLM(model=MODEL, trust_remote_code=True, seed = SEED, dtype="float16", download_dir="weights", tokenizer=args.hub_model_name)
+llm = LLM(model=MODEL, trust_remote_code=True, seed = SEED, dtype="float16", tokenizer=args.hub_model_name)
 sampling_params = SamplingParams(n=1, temperature=0.01, top_p=0.94, top_k=30, max_tokens=60)
 ignore_folders = [""]
 import os
