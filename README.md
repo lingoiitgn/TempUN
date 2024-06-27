@@ -3,4 +3,8 @@ We introduce **TempUN**, an extensive and balanced dataset ranging from 10,000 B
 
 Dataset Link: [Drive](https://drive.google.com/drive/folders/1Qc-xqoWOACZI1uUxcKLsKuXoqHF6Sv5w?usp=sharing)
 
+# Inference
+
+## After fine tuning:
+
 More Details in the paper (Link Coming soon)
