@@ -10,7 +10,8 @@ Dataset Link: [Drive](https://drive.google.com/drive/folders/1Qc-xqoWOACZI1uUxcK
 ## After fine tuning:
 We have performed model fine-tuning in three different paradigms:
 
-    Yearwise Fine-Tuning (Y-FT)
-    Continual Learning (CL)
-    Random Fine-Tuning (R-FT)
+1. Yearwise Fine-Tuning (Y-FT)
+2. Continual Learning (CL)
+3. Random Fine-Tuning (R-FT)
+
 More Details in the paper (Link Coming soon)
