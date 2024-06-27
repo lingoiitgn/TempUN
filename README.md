@@ -20,7 +20,7 @@ At the time of performing inference, from all fine-tuned models only `phi-2`, `m
 
 - The `lora_to_original.py` script is designed to merge a pre-trained base model with an adapter model (fine-tuned model) using Parameter-Efficient Fine-Tuning (PEFT) and then save the merged model.
 - The `code4.py` script performs inference using the fine-tuned LLMs and saves the results. It reads prompts from CSV files, generates responses using the LLM, extracts specific answers from the responses, and saves the results to new CSV files.
-- The `run.py` script orchestrates the entire process. It loads different checkpoints of fine-tuned models, converts them using the lora_to_original.py script, and then performs inference using the code4.py script.
+- The `run.py` script orchestrates the entire process. It loads different checkpoints of fine-tuned models, converts them using the `lora_to_original.py` script, and then performs inference using the `code4.py` script.
 
 To get inference results, follow these steps:
 1. Modify the paths in the `lora_to_original.py`, `code4.py`, and `run.py` scripts to match your environment.
@@ -28,5 +28,6 @@ To get inference results, follow these steps:
 
           python run.py --model /path_to_fine-tuned_models
 
+#### Using transformers:
 
 More Details in the paper (Link Coming soon)
