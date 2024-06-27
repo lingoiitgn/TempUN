@@ -35,6 +35,17 @@ For models like `flan-t5-xl`, `gemma-7b-it`, and `phi-3-medium-instruct`, which 
 - Steps to get inference remains the same as they were in vLLM section.
 
 ### For R-FT:
+The `lora_to_original.py` and `code4.py` scripts remain the same (use `code4.py` from either the `inf_vllm` or `inf_transformers` folder based on the given model). However, instead of `run.py`, we use `run_full.py`, located at `inference/after_FT/run_full.py`.
+
+To get inference results, follow these steps:
+1. Modify the paths in the `lora_to_original.py`, `code4.py`, and `run_full.py` scripts to match your environment and change the `model_name` to get inference from desired llm.
+2. Run the `lora_to_original.py` script with the following command:
+
+       python lora_to_original.py --adapter /path_to_fine-tuned_model_checkpoint --output /path_to_save_model_and_use_this_path_for_run_full.py
+3. Run the `run_full.py` script with the following command:
+
+       python run_full.py --model /path_to_saved_model_from_step_2
+
 
 
 More Details in the paper (Link Coming soon)
