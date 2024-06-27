@@ -6,12 +6,11 @@ Dataset Link: [Drive](https://drive.google.com/drive/folders/1Qc-xqoWOACZI1uUxcK
 # Inference
 
 ## Zeroshot
+#### Using vLLM:
 
-### Using vLLM:
+#### Using transformers:
 
-### Using transformers:
-
-### Using Groq:
+#### Using Groq:
 
 ## After fine tuning
 We have performed model fine-tuning in three different paradigms:
