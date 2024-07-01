@@ -37,9 +37,9 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
 
 | Models                | Generation | DB   | CP   | WB   | MM   | RB   | TB   | Average |
 |-----------------------|------------|------|------|------|------|------|------|---------|
-|                       | **C ↑**     | .11  | 0    | .18  | .08  | .09  | .06  | .09     |
+                        | **C ↑**     | .11  | 0    | .18  | .08  | .09  | .06  | .09     |
 | **phi-2**             | **I ↓**     | .89  | .97  | .82  | .92  | .89  | .93  | .90     |
-|                       | **N ↓**     | **0** | .03  | **0** | **0** | .02  | .01  | .01     |
+                        | **N ↓**     | **0** | .03  | **0** | **0** | .02  | .01  | .01     |
 |                       | **C ↑**     | .38  | .40  | .20  | .24  | .20  | .03  | .30     |
 | **flan-t5-xl**        | **I ↓**     | .62  | .60  | .80  | .76  | .79  | .97  | .69     |
 |                       | **N ↓**     | **0** | **0** | **0** | **0** | .01  | **0** | **0** |
@@ -77,86 +77,235 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
 
 <table>
   <tr>
-    <th style="text-align: center; vertical-align: middle;">Models</th>
-    <th style="text-align: center;">Generation</th>
-    <th style="text-align: center;">DB</th>
-    <th style="text-align: center;">CP</th>
-    <th style="text-align: center;">WB</th>
-    <th style="text-align: center;">MM</th>
-    <th style="text-align: center;">RB</th>
-    <th style="text-align: center;">TB</th>
-    <th style="text-align: center;">Average</th>
+    <th>Models</th>
+    <th>Generation</th>
+    <th>DB</th>
+    <th>CP</th>
+    <th>WB</th>
+    <th>MM</th>
+    <th>RB</th>
+    <th>TB</th>
+    <th>Average</th>
   </tr>
   <tr>
-    <td rowspan="3" style="text-align: center;"><b>phi-2</b></td>
-    <td style="text-align: center;"><b>C &uarr;</b></td>
-    <td style="text-align: center;">.11</td>
-    <td style="text-align: center;">0</td>
-    <td style="text-align: center;">.18</td>
-    <td style="text-align: center;">.08</td>
-    <td style="text-align: center;">.09</td>
-    <td style="text-align: center;">.06</td>
-    <td style="text-align: center;">.09</td>
+    <td rowspan="3"><b>phi-2</b></td>
+    <td><b>C &uarr;</b></td>
+    <td>.11</td>
+    <td>0</td>
+    <td>.18</td>
+    <td>.08</td>
+    <td>.09</td>
+    <td>.06</td>
+    <td>.09</td>
   </tr>
   <tr>
-    <td style="text-align: center; vertical-align: middle;"><b>I &darr;</b></td>
-    <td style="text-align: center;">.89</td>
-    <td style="text-align: center;">.97</td>
-    <td style="text-align: center;">.82</td>
-    <td style="text-align: center;">.92</td>
-    <td style="text-align: center;">.89</td>
-    <td style="text-align: center;">.93</td>
-    <td style="text-align: center;">.90</td>
+    <td><b>I &darr;</b></td>
+    <td>.89</td>
+    <td>.97</td>
+    <td>.82</td>
+    <td>.92</td>
+    <td>.89</td>
+    <td>.93</td>
+    <td>.90</td>
   </tr>
   <tr>
-    <td style="text-align: center;"><b>N &darr;</b></td>
-    <td style="text-align: center;"><b>0</b></td>
-    <td style="text-align: center;">.03</td>
-    <td style="text-align: center;"><b>0</b></td>
-    <td style="text-align: center;"><b>0</b></td>
-    <td style="text-align: center;">.02</td>
-    <td style="text-align: center;">.01</td>
-    <td style="text-align: center;">.01</td>
+    <td><b>N &darr;</b></td>
+    <td><b>0</b></td>
+    <td>.03</td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td>.02</td>
+    <td>.01</td>
+    <td>.01</td>
   </tr>
   <tr>
-    <td colspan="9"><hr></td>
+    <td rowspan="3"><b>flan-t5-xl</b></td>
+    <td><b>C &uarr;</b></td>
+    <td>.38</td>
+    <td>.40</td>
+    <td>.20</td>
+    <td>.24</td>
+    <td>.20</td>
+    <td>.03</td>
+    <td>.30</td>
   </tr>
   <tr>
-    <td rowspan="3" style="text-align: center;"><b>flan-t5-xl</b></td>
-    <td style="text-align: center;"><b>C &uarr;</b></td>
-    <td style="text-align: center;">.38</td>
-    <td style="text-align: center;">.40</td>
-    <td style="text-align: center;">.20</td>
-    <td style="text-align: center;">.24</td>
-    <td style="text-align: center;">.20</td>
-    <td style="text-align: center;">.03</td>
-    <td style="text-align: center;">.30</td>
+    <td><b>I &darr;</b></td>
+    <td>.62</td>
+    <td>.60</td>
+    <td>.80</td>
+    <td>.76</td>
+    <td>.79</td>
+    <td>.97</td>
+    <td>.69</td>
   </tr>
   <tr>
-    <td style="text-align: center;"><b>I &darr;</b></td>
-    <td style="text-align: center;">.62</td>
-    <td style="text-align: center;">.60</td>
-    <td style="text-align: center;">.80</td>
-    <td style="text-align: center;">.76</td>
-    <td style="text-align: center;">.79</td>
-    <td style="text-align: center;">.97</td>
-    <td style="text-align: center;">.69</td>
+    <td><b>N &darr;</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td>.01</td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
   </tr>
   <tr>
-    <td style="text-align: center;"><b>N &darr;</b></td>
-    <td style="text-align: center;"><b>0</b></td>
-    <td style="text-align: center;"><b>0</b></td>
-    <td style="text-align: center;"><b>0</b></td>
-    <td style="text-align: center;"><b>0</b></td>
-    <td style="text-align: center;">.01</td>
-    <td style="text-align: center;"><b>0</b></td>
-    <td style="text-align: center;"><b>0</b></td>
+    <td rowspan="3"><b>flan-t5-xl</b></td>
+    <td><b>C &uarr;</b></td>
+    <td>.38</td>
+    <td>.40</td>
+    <td>.20</td>
+    <td>.24</td>
+    <td>.20</td>
+    <td>.03</td>
+    <td>.30</td>
   </tr>
   <tr>
-    <td colspan="9"><hr></td>
+    <td><b>I &darr;</b></td>
+    <td>.62</td>
+    <td>.60</td>
+    <td>.80</td>
+    <td>.76</td>
+    <td>.79</td>
+    <td>.97</td>
+    <td>.69</td>
   </tr>
-  <!-- Continue similarly for other models -->
+  <tr>
+    <td><b>N &darr;</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td>.01</td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+  </tr>
+    <tr>
+    <td rowspan="3"><b>flan-t5-xl</b></td>
+    <td><b>C &uarr;</b></td>
+    <td>.38</td>
+    <td>.40</td>
+    <td>.20</td>
+    <td>.24</td>
+    <td>.20</td>
+    <td>.03</td>
+    <td>.30</td>
+  </tr>
+  <tr>
+    <td><b>I &darr;</b></td>
+    <td>.62</td>
+    <td>.60</td>
+    <td>.80</td>
+    <td>.76</td>
+    <td>.79</td>
+    <td>.97</td>
+    <td>.69</td>
+  </tr>
+  <tr>
+    <td><b>N &darr;</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td>.01</td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+  </tr>
+    <tr>
+    <td rowspan="3"><b>flan-t5-xl</b></td>
+    <td><b>C &uarr;</b></td>
+    <td>.38</td>
+    <td>.40</td>
+    <td>.20</td>
+    <td>.24</td>
+    <td>.20</td>
+    <td>.03</td>
+    <td>.30</td>
+  </tr>
+  <tr>
+    <td><b>I &darr;</b></td>
+    <td>.62</td>
+    <td>.60</td>
+    <td>.80</td>
+    <td>.76</td>
+    <td>.79</td>
+    <td>.97</td>
+    <td>.69</td>
+  </tr>
+  <tr>
+    <td><b>N &darr;</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td>.01</td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+  </tr>
+    <tr>
+    <td rowspan="3"><b>flan-t5-xl</b></td>
+    <td><b>C &uarr;</b></td>
+    <td>.38</td>
+    <td>.40</td>
+    <td>.20</td>
+    <td>.24</td>
+    <td>.20</td>
+    <td>.03</td>
+    <td>.30</td>
+  </tr>
+  <tr>
+    <td><b>I &darr;</b></td>
+    <td>.62</td>
+    <td>.60</td>
+    <td>.80</td>
+    <td>.76</td>
+    <td>.79</td>
+    <td>.97</td>
+    <td>.69</td>
+  </tr>
+  <tr>
+    <td><b>N &darr;</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td>.01</td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+  </tr>
+    <tr>
+    <td rowspan="3"><b>flan-t5-xl</b></td>
+    <td><b>C &uarr;</b></td>
+    <td>.38</td>
+    <td>.40</td>
+    <td>.20</td>
+    <td>.24</td>
+    <td>.20</td>
+    <td>.03</td>
+    <td>.30</td>
+  </tr>
+  <tr>
+    <td><b>I &darr;</b></td>
+    <td>.62</td>
+    <td>.60</td>
+    <td>.80</td>
+    <td>.76</td>
+    <td>.79</td>
+    <td>.97</td>
+    <td>.69</td>
+  </tr>
+  <tr>
+    <td><b>N &darr;</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td>.01</td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+  </tr>
 </table>
+
 
 
 
