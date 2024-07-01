@@ -49,7 +49,6 @@ def seed_everything(seed):
 seed_everything(args.seed)
 
 ################### Setting up models ###################
-# access_token = "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"
 model_name = args.model_name # 'mistralai/Mistral-7B-v0.1'
 base_model_id = args.base_model_id # "mistralai/Mistral-7B-v0.1"
 tokenizer = AutoTokenizer.from_pretrained("microsoft/phi-2" ) # token = access_token
