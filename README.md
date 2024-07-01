@@ -428,12 +428,12 @@ Below table contains comparative performance of LLMs for different MCQ categorie
 </p>
 
 <p align="center">
-  <img src="./plots/DB-I.jpg" alt="correct"><br>
+  <img src="./plots/DB-I.jpg" alt="I"><br>
   <em>Incorrect <strong>'I'</strong> evaluations from Zero-Shot Evaluations on the DB-MCQs for the time-span from years 1947 to 2022.</em>
 </p>
 
 <p align="center">
-  <img src="./plots/DB-N.jpg" alt="correct"><br>
+  <img src="./plots/DB-NA.jpg" alt="NA"><br>
   <em>Information not availabel <strong>'N'</strong> evaluations from Zero-Shot Evaluations on the DB-MCQs for the time-span from years 1947 to 2022.</em>
 </p>
 
