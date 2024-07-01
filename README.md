@@ -36,6 +36,7 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
       python inf_gemini.py --api-key YOUR_GEMINI_API_KEY --base-dir /path_to_csvs --out-dir /path_to_results --year 1947
 
 Below table contains comparative performance of LLMs for different MCQ categories under **zero-shot** settings (Scale over here is 0-1). Here, 'C' (Correct), 'I' (Incorrect), and 'N' (Information Not Available) represent the percentage of correct generations, incorrect generations, and LLMs generation of information not available, respectively. We **bold** the highest values for 'C', and lowest values for 'I' and 'N' categories. Here, we distinguish between open-source and closed-source LLMs with the **bold** and not bold respectively.
+
 <p align="center">
   <table>
     <tr>
