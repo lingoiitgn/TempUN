@@ -39,6 +39,10 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
   <img src="./plots/zeroshot.png" alt="zeroshot">
 </div>
 
+<div align="center">
+  <img src="./plots/DB-C.png" alt="correct">
+</div>
+
 ## After fine tuning
 We have performed model fine-tuning in three different paradigms:
 
