@@ -17,8 +17,8 @@ genai.configure(api_key=args.api_key)
 
 generation_config = {
     "temperature": 0.01,
-    "top_p": 1,
-    "top_k": 1,
+    "top_p": 0.95,
+    "top_k": 30,
 }
 
 safety_settings = [
