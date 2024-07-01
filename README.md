@@ -77,7 +77,7 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
 
 <table>
   <tr>
-    <th style="text-align: center;">Models</th>
+    <th style="text-align: center; vertical-align: middle;">Models</th>
     <th style="text-align: center;">Generation</th>
     <th style="text-align: center;">DB</th>
     <th style="text-align: center;">CP</th>
@@ -99,7 +99,7 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
     <td style="text-align: center;">.09</td>
   </tr>
   <tr>
-    <td style="text-align: center;"><b>I &darr;</b></td>
+    <td style="text-align: center; vertical-align: middle;"><b>I &darr;</b></td>
     <td style="text-align: center;">.89</td>
     <td style="text-align: center;">.97</td>
     <td style="text-align: center;">.82</td>
