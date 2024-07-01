@@ -35,7 +35,9 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
 
       python inf_gemini.py --api-key YOUR_GEMINI_API_KEY --base-dir /path_to_csvs --out-dir /path_to_results --year 1947
 
-![zeroshot](./plots/zeroshot.png)
+<div align="center">
+  <img src="./plots/zeroshot.png" alt="zeroshot">
+</div>
 
 ## After fine tuning
 We have performed model fine-tuning in three different paradigms:
