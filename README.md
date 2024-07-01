@@ -13,10 +13,15 @@ We have utillized vLLM for getting inference from `phi-2`, `mistral-instruct-v0.
     CUDA_VISIBLE_DEVICES=0 python inf_vllm.py --hub-model-name mistralai/Mistral-7B-Instruct-v0.2 --base-dir /path_to_csvs --out-dir /path_to_results --year 1947
 
 #### Using transformers:
-flan-t5-xl
+We have utillized transformers for getting inference from `flan-t5-xl`, and `phi-3-medium-instruct`. The code for inference is located in the `inference/zeroshot/inf_transformers.py` file. To get inference run below command:
+
+    CUDA_VISIBLE_DEVICES=0 python inf_transformers.py --hub-model-name microsoft/Phi-3-medium-128k-instruct --base-dir /path_to_csvs --out-dir /path_to_results --year 1947
+
 #### Using Groq:
-gemma-1.1-7b-it, Meta-Llama-3-8B-Instruct, phi-3-medium-instruct, Mixtral-8x7B-Instruct-v0.1, Meta-Llama-3-70B-Instruct, gpt-3.5-turbo, gpt-4, and gemini-pro 
+gemma-1.1-7b-it, Meta-Llama-3-8B-Instruct, Mixtral-8x7B-Instruct-v0.1, Meta-Llama-3-70B-Instruct, 
+
 ### Closed-source models:
+gpt-3.5-turbo, gpt-4, and gemini-pro
 
 ## After fine tuning
 We have performed model fine-tuning in three different paradigms:
