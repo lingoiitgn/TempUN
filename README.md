@@ -10,7 +10,7 @@ Dataset Link: [Drive](https://drive.google.com/drive/u/2/folders/1ci_Ni4ab5fQ5-x
 
 <p align="center">
   <img src="./plots/TempUNs.png" alt="TempUNs"><br>
-  <em>The number of prompts for each category for different metrics in the TempUNs dataset.</em>
+  <em>The number of prompts for each category for different metrics in the TempUN<sub>s</sub> dataset.</em>
 </p>
 
 # Inference
