@@ -426,7 +426,7 @@ Below table contains comparative performance of LLMs for different MCQ categorie
   <div align="center">
     <img src="./plots/DB-C.jpg" alt="correct">
   </div>
-  <figcaption>
+  <figcaption align="center">
     Correct <strong>C</strong> evaluations from Zero-Shot Evaluations on the DB-MCQs for the time-span from years 1947 to 2022.
   </figcaption>
 </figure>
