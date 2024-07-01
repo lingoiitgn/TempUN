@@ -35,6 +35,8 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
 
       python inf_gemini.py --api-key YOUR_GEMINI_API_KEY --base-dir /path_to_csvs --out-dir /path_to_results --year 1947
 
+![zeroshot](./plots/zeroshot.png)
+
 ## After fine tuning
 We have performed model fine-tuning in three different paradigms:
 
@@ -73,8 +75,6 @@ To get inference results, follow these steps:
 3. Run the `run_full.py` script with the following command:
 
        python run_full.py --model /path_to_saved_model_from_step_2
-
-![horizontal flip](./horizontal_flip.png)
 
 # Fine-tuning
 We have performed model fine-tuning in three different paradigms: **Yearwise Fine-Tuning (Y-FT)**, **Continual Learning (CL)** and **Random Fine-Tuning (R-FT)**. We have fine-tuned `phi-2`, `flan-t5-xl`, `mistral-instruct`, `llama-2-chat`, `gemma-7b-it`, `llama-3-8b`, and `phi-3-instruct` models on our **TempUN<sub>s</sub>** dataset.
