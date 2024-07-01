@@ -25,7 +25,7 @@ for year in range(start_year, end_year+1):
     if year != start_year and prev != None:
         model_name = prev
 
-    command = f"CUDA_VISIBLE_DEVICES={cuda} python /path_to_seq2seq-phi3.py --dataset-path {dataset_path} --start-year {year} --end-year {year} --model-name {model_name} --seed {seed} --batch-size {batch_size} --num {numerical} --epochs {epoch} --lr {learning_rate} --save-limit {save_limit} --patience {patience} --prefix \"{prefix}\" | tee {logs_dir}/{year}.txt"
+    command = f"CUDA_VISIBLE_DEVICES={cuda} python /path_to_lora-train-phi3.py --dataset-path {dataset_path} --start-year {year} --end-year {year} --model-name {model_name} --seed {seed} --batch-size {batch_size} --num {numerical} --epochs {epoch} --lr {learning_rate} --save-limit {save_limit} --patience {patience} --prefix \"{prefix}\" | tee {logs_dir}/{year}.txt"
     print(command)
     os.system(command)
 
