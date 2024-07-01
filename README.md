@@ -44,7 +44,7 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
 <div align="center">
   <img src="./plots/DB-C.jpg" alt="correct">
 </div>
-Correct **"C"** evaluations from Zero-Shot Evaluations on the DB-MCQs for the time-span from years 1947 to 2022.
+Correct **(C)** evaluations from Zero-Shot Evaluations on the DB-MCQs for the time-span from years 1947 to 2022.
 
 ## After fine tuning
 We have performed model fine-tuning in three different paradigms:
