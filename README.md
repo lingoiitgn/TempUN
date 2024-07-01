@@ -389,8 +389,8 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
     <td>.24</td>
   </tr>
   <tr>
-    <td rowspan="3"><b>gemini-pro</b></td>
-    <td><b>C &uarr;</b></td>
+    <td rowspan="3">gemini-pro</td>
+    <td><b><c>C &uarr;</c>c</b></td>
     <td>.29</td>
     <td>.38</td>
     <td>.34</td>
@@ -421,12 +421,7 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
   </tr>
 </table>
 
-
-<div align="center">
-  <img src="./plots/zeroshot.png" alt="zeroshot">
-</div>
-
-
+Comparative performance of LLMs for different MCQ categories under **zero-shot** settings (Scale over here is 0-1). Here, 'C' (Correct), 'I' (Incorrect), and 'N' (Information Not Available) represent the percentage of correct generations, incorrect generations, and LLMs generation of information not available, respectively. We **bold** the highest values for 'C', and lowest values for 'I' and 'N' categories. Here, we distinguish between open-source and closed-source LLMs with the **bold** and not bold respectively.
 
 <div align="center">
   <img src="./plots/DB-C.jpg" alt="correct">
