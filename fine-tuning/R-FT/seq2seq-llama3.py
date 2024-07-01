@@ -35,7 +35,7 @@ pprint(args)
 
 
 DATASET_FOLDER = args.dataset_path
-MODEL_OUTPUT_FOLDER = f"models/lora-llama3-full2/{args.start_year}-{args.end_year}"
+MODEL_OUTPUT_FOLDER = f"models/llama3/{args.start_year}-{args.end_year}"
 os.makedirs(MODEL_OUTPUT_FOLDER, exist_ok=True)
 
 
