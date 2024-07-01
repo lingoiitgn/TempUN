@@ -424,9 +424,18 @@ Below table contains comparative performance of LLMs for different MCQ categorie
 
 <p align="center">
   <img src="./plots/DB-C.jpg" alt="correct"><br>
-  <em>Correct <strong>C</strong> evaluations from Zero-Shot Evaluations on the DB-MCQs for the time-span from years 1947 to 2022.</em>
+  <em>Correct <strong>'C'</strong> evaluations from Zero-Shot Evaluations on the DB-MCQs for the time-span from years 1947 to 2022.</em>
 </p>
 
+<p align="center">
+  <img src="./plots/DB-C.jpg" alt="correct"><br>
+  <em>Incorrect <strong>'I'</strong> evaluations from Zero-Shot Evaluations on the DB-MCQs for the time-span from years 1947 to 2022.</em>
+</p>
+
+<p align="center">
+  <img src="./plots/DB-C.jpg" alt="correct"><br>
+  <em>Information not availabel <strong>'N'</strong> evaluations from Zero-Shot Evaluations on the DB-MCQs for the time-span from years 1947 to 2022.</em>
+</p>
 
 ## After fine tuning
 We have performed model fine-tuning in three different paradigms:
