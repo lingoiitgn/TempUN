@@ -17,7 +17,7 @@ from rich.pretty import pprint
 import pandas as pd
 
 parser = argparse.ArgumentParser(description='Finetune LLaMA')
-parser.add_argument('--dataset-path', type=str, default="/home/singh_shruti/temporal_ft/temporal_ft/final_top100_jsons_shrunk_acc_prompt_yearly_prompt", help='train dataset: Folder path containing csvs')
+parser.add_argument('--dataset-path', type=str, default="/path_to_csvs", help='train dataset: Folder path containing csvs')
 parser.add_argument('--start-year', type=int, default=1947, help='start year')
 parser.add_argument('--end-year', type=int, default=2020, help='end year')
 parser.add_argument('--model-name', type=str, default='meta-llama/Meta-Llama-3-8B', help='model name')
