@@ -74,6 +74,7 @@ To get inference results, follow these steps:
 
        python run_full.py --model /path_to_saved_model_from_step_2
 
-
+# Fine-tuning
+We have performed model fine-tuning in three different paradigms: **Yearwise Fine-Tuning (Y-FT)**, **Continual Learning (CL)** and **Random Fine-Tuning (R-FT)**. We have fine-tuned `phi-2`, `flan-t5-xl`, `mistral-instruct`, `llama-2-chat`, `gemma-7b-it`, `llama-3-8b`, and `phi-3-instruct` models on out **TempUN<sub>s</sub>**
 
 More Details in the paper (Link Coming soon)
