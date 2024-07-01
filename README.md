@@ -118,9 +118,6 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
     <td>.01</td>
   </tr>
   <tr>
-    <td colspan="9"><hr></td>
-  </tr>
-  <tr>
     <td rowspan="3"><b>flan-t5-xl</b></td>
     <td><b>C &uarr;</b></td>
     <td>.38</td>
