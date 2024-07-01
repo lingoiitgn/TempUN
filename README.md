@@ -390,7 +390,7 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
   </tr>
   <tr>
     <td rowspan="3">gemini-pro</td>
-    <td><b><c>C &uarr;</c>c</b></td>
+    <td><b><c>C &uarr;</c></b></td>
     <td>.29</td>
     <td>.38</td>
     <td>.34</td>
