@@ -74,49 +74,6 @@ To get inference results, follow these steps:
 
        python run_full.py --model /path_to_saved_model_from_step_2
 
-\begin{table*}[!tbh]
-\centering
-\begin{tabular}{lcccccccc}  \hline
-\textbf{Models} & \textbf{Generation} & \textbf{$DB$} & \textbf{$CP$} & \textbf{$WB$} & \textbf{$MM$} & \textbf{$RB$} & \textbf{$TB$} & \textbf{Average} \\  \hline
- & \textbf{C$\uparrow$} & .11 & 0 & .18 & .08 & .09 & .06 & .09 \\
- & \textbf{I$\downarrow$} & .89 & .97 & .82 & .92 & .89 & .93 & .90 \\
-\multirow{-3}{*}{\texttt{phi-2}} & \textbf{N$\downarrow$} & \textbf{0} & .03 & \textbf{0} & \textbf{0} & .02 & .01 & .01 \\  \hline
- & \textbf{C$\uparrow$} & .38 & .40 & .20 & .24 & .20 & .03 & .30 \\
- & \textbf{I$\downarrow$} & .62 & .60 & .80 & .76 & .79 & .97 & .69 \\
-\multirow{-3}{*}{\texttt{flan-t5-xl}} & \textbf{N$\downarrow$} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & .01 & \textbf{0} & \textbf{0} \\  \hline
- & \textbf{C$\uparrow$} & .37 & .43 & .20 & .23 & .34 & \textbf{.08} & .27 \\
- & \textbf{I$\downarrow$} & .51 & .57 & .80 & .64 & .66 & .71 & .65 \\
-\multirow{-3}{*}{\texttt{mistral-instruct}} & \textbf{N$\downarrow$} & .12 & \textbf{0} & \textbf{0} & .13 & \textbf{0} & .22 & .08 \\  \hline
- & \textbf{C$\uparrow$} & .21 & .45 & .22 & .15 & .22 & .05 & .21 \\
- & \textbf{I$\downarrow$} & .76 & .55 & .78 & .81 & .79 & .93 & .77 \\
-\multirow{-3}{*}{\texttt{llama-2-chat}} & \textbf{N$\downarrow$} & .03 & \textbf{0} & \textbf{0} & .04 & \textbf{0} & .02 & .02 \\  \hline
- & \textbf{C$\uparrow$} & .21 & .42 & .15 & .12 & .14 & .03 & .19 \\
- & \textbf{I$\downarrow$} & .77 & .58 & .85 & .88 & .86 & .94 & .79 \\  
-\multirow{-3}{*}{\texttt{gemma-7b-it}} & \textbf{N$\downarrow$} & .02 & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & .03 & .01 \\ \hline
- & \textbf{C$\uparrow$} & .39 & .39 & .19 & .18 & .24 & .07 & .31 \\
- & \textbf{I$\downarrow$} & .61 & .61 & .81 & .82 & .76 & .93 & .69 \\  
-\multirow{-3}{*}{\texttt{llama-3-8b}} & \textbf{N$\downarrow$} & .01 & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} \\\hline
- & \textbf{C$\uparrow$} & .09 & \textbf{.49} & .37 & .10 & .01 & .01 & .14 \\
- & \textbf{I$\downarrow$} & \textbf{.16} & .47 & \textbf{.31} & \textbf{.27} & \textbf{.03} & .53 & \textbf{.24} \\
-\multirow{-3}{*}{\texttt{phi-3-medium}} & \textbf{N$\downarrow$} & .74 & .05 & .33 & .63 & .96 & .46 & .62 \\  \hline
- & \textbf{C$\uparrow$} & .33 & .34 & .29 & .18 & .29 & .03 & .28 \\
- & \textbf{I$\downarrow$} & .61 & .64 & .71 & .82 & .71 & .94 & .68 \\
-\multirow{-3}{*}{\texttt{mixtral-8x7b}} & \textbf{N$\downarrow$} & .07 & .02 & \textbf{0} & \textbf{0} & \textbf{0} & .03 & .04 \\  \hline
- & \textbf{C$\uparrow$} & \textbf{.40} & .37 & \textbf{.55} & \textbf{.37} & \textbf{.38} & .01 & \textbf{.37} \\
- & \textbf{I$\downarrow$} & .60 & .63 & .45 & .63 & .62 & .99 & .63 \\
-\multirow{-3}{*}{\texttt{llama-3-70b}} & \textbf{N$\downarrow$} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} \\  \hline
-{\color[HTML]{656565} } & {\color[HTML]{656565} \textbf{C$\uparrow$}} & {\color[HTML]{656565} .27} & {\color[HTML]{656565} .39} & {\color[HTML]{656565} .16} & {\color[HTML]{656565} .19} & {\color[HTML]{656565} .12} & {\color[HTML]{656565} 0} & {\color[HTML]{656565} .19} \\
-{\color[HTML]{656565} } & {\color[HTML]{656565} \textbf{I$\downarrow$}} & {\color[HTML]{656565} .72} & {\color[HTML]{656565} .61} & {\color[HTML]{656565} .84} & {\color[HTML]{656565} .81} & {\color[HTML]{656565} .88} & {\color[HTML]{656565} .99} & {\color[HTML]{656565} .81} \\
-\multirow{-3}{*}{{\color[HTML]{656565} \texttt{gpt-3.5-turbo}}} & {\color[HTML]{656565} \textbf{N$\downarrow$}} & {\color[HTML]{656565} .01} & {\color[HTML]{656565} \textbf{0}} & {\color[HTML]{656565} \textbf{0}} & {\color[HTML]{656565} \textbf{0}} & {\color[HTML]{656565} .01} & {\color[HTML]{656565} .01} & {\color[HTML]{656565} .01} \\  \hline
-{\color[HTML]{656565} } & {\color[HTML]{656565} \textbf{C$\uparrow$}} & {\color[HTML]{656565} .29} & {\color[HTML]{656565} .02} & {\color[HTML]{656565} 0} & {\color[HTML]{656565} .29} & {\color[HTML]{656565} 0} & {\color[HTML]{656565} .01} & {\color[HTML]{656565} .10} \\
-{\color[HTML]{656565} } & {\color[HTML]{656565} \textbf{I$\downarrow$}} & {\color[HTML]{656565} .35} & {\color[HTML]{656565} .98} & {\color[HTML]{656565} 1.00} & {\color[HTML]{656565} .50} & {\color[HTML]{656565} 1.00} & {\color[HTML]{656565} \textbf{.12}} & {\color[HTML]{656565} .66} \\
-\multirow{-3}{*}{{\color[HTML]{656565} \texttt{gpt-4}}} & {\color[HTML]{656565} \textbf{N$\downarrow$}} & {\color[HTML]{656565} .36} & {\color[HTML]{656565} \textbf{0}} & {\color[HTML]{656565} \textbf{0}} & {\color[HTML]{656565} .21} & {\color[HTML]{656565} \textbf{0}} & {\color[HTML]{656565} .87} & {\color[HTML]{656565} .24} \\  \hline
-{\color[HTML]{656565} } & {\color[HTML]{656565} \textbf{C$\uparrow$}} & {\color[HTML]{656565} .29} & {\color[HTML]{656565} .38} & {\color[HTML]{656565} .34} & {\color[HTML]{656565} .15} & {\color[HTML]{656565} 0} & {\color[HTML]{656565} 0} & {\color[HTML]{656565} .19} \\
-{\color[HTML]{656565} } & {\color[HTML]{656565} \textbf{I$\downarrow$}} & {\color[HTML]{656565} .71} & {\color[HTML]{656565} .62} & {\color[HTML]{656565} .66} & {\color[HTML]{656565} .85} & {\color[HTML]{656565} .99} & {\color[HTML]{656565} 1.00} & {\color[HTML]{656565} .80} \\
-\multirow{-3}{*}{{\color[HTML]{656565} \texttt{gemini-pro}}} & {\color[HTML]{656565} \textbf{N$\downarrow$}} & {\color[HTML]{656565} \textbf{0}} & {\color[HTML]{656565} \textbf{0}} & {\color[HTML]{656565} \textbf{0}} & {\color[HTML]{656565} \textbf{0}} & {\color[HTML]{656565} .01} & {\color[HTML]{656565} \textbf{0}} & {\color[HTML]{656565} \textbf{0}} \\   \hline
-\end{tabular}%
-
-
 # Fine-tuning
 We have performed model fine-tuning in three different paradigms: **Yearwise Fine-Tuning (Y-FT)**, **Continual Learning (CL)** and **Random Fine-Tuning (R-FT)**. We have fine-tuned `phi-2`, `flan-t5-xl`, `mistral-instruct`, `llama-2-chat`, `gemma-7b-it`, `llama-3-8b`, and `phi-3-instruct` models on our **TempUN<sub>s</sub>** dataset.
 
