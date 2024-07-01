@@ -497,4 +497,8 @@ To get inference results, follow these steps:
 # Fine-tuning
 We have performed model fine-tuning in three different paradigms: **Yearwise Fine-Tuning (Y-FT)**, **Continual Learning (CL)** and **Random Fine-Tuning (R-FT)**. We have fine-tuned `phi-2`, `flan-t5-xl`, `mistral-instruct`, `llama-2-chat`, `gemma-7b-it`, `llama-3-8b`, and `phi-3-instruct` models on our **TempUN<sub>s</sub>** dataset.
 
+- The codes for **Yearwise Fine-Tuning (Y-FT)** are located in `fine-tuning/Y-FT` directory.
+- The codes for **Continual Learning (CL)** are located in `fine-tuning/CL` directory.
+- The codes for **Random Fine-Tuning (R-FT)** are located in `fine-tuning/R-FT` directory.
+
 More Details in the paper (Link Coming soon)
