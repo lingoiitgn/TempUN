@@ -479,6 +479,11 @@ To get inference results, follow these steps:
 
        python run_full.py --model /path_to_saved_model_from_step_2
 
+<p align="center">
+  <img src="./plots/after_finetuning.jpg" alt="FT"><br>
+  <em>Comparative performance of LLMs for different MCQ categories under <strong>Yearwise Finetuning</strong>, <strong>Continual Learning</strong>, and <strong>Random Finetuning</strong> settings. Here, <strong>‘C’</strong> (Correct), <strong>‘I’</strong> (Incorrect), and <strong>‘N’</strong> (Information Not Available) represent the percentage of correct generations, incorrect generations, and LLMs generation of information not available, respectively. We <strong>bold</strong> the highest values for <strong>‘C’</strong>, and lowest values for <strong>‘I’</strong> and <strong>‘N’</strong> categories.</em>
+</p>
+
 # Fine-tuning
 We have performed model fine-tuning in three different paradigms: **Yearwise Fine-Tuning (Y-FT)**, **Continual Learning (CL)** and **Random Fine-Tuning (R-FT)**. We have fine-tuned `phi-2`, `flan-t5-xl`, `mistral-instruct`, `llama-2-chat`, `gemma-7b-it`, `llama-3-8b`, and `phi-3-instruct` models on our **TempUN<sub>s</sub>** dataset.
 
