@@ -3,6 +3,16 @@ We introduce **TempUN**, an extensive and balanced dataset ranging from 10,000 B
 
 Dataset Link: [Drive](https://drive.google.com/drive/u/2/folders/1ci_Ni4ab5fQ5-x4Ly9n_FW9_rlBOKqiM)
 
+<p align="center">
+  <img src="./plots/TempUN.png" alt="TempUN"><br>
+  <em>The number of samples for each category in the TempUN dataset.</em>
+</p>
+
+<p align="center">
+  <img src="./plots/TempUNs.png" alt="TempUNs"><br>
+  <em>The number of prompts for each category for different metrics in the TempUNs dataset.</em>
+</p>
+
 # Inference
 
 ## Zeroshot
