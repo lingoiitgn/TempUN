@@ -35,6 +35,46 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
 
       python inf_gemini.py --api-key YOUR_GEMINI_API_KEY --base-dir /path_to_csvs --out-dir /path_to_results --year 1947
 
+| Models                | Generation | $DB$ | $CP$ | $WB$ | $MM$ | $RB$ | $TB$ | Average |
+|-----------------------|------------|------|------|------|------|------|------|---------|
+|                       | **C$\uparrow$** | .11  | 0    | .18  | .08  | .09  | .06  | .09     |
+|                       | **I$\downarrow$** | .89  | .97  | .82  | .92  | .89  | .93  | .90     |
+| **phi-2**             | **N$\downarrow$** | **0**  | .03  | **0**  | **0**  | .02  | .01  | .01     |
+|                       | **C$\uparrow$** | .38  | .40  | .20  | .24  | .20  | .03  | .30     |
+|                       | **I$\downarrow$** | .62  | .60  | .80  | .76  | .79  | .97  | .69     |
+| **flan-t5-xl**        | **N$\downarrow$** | **0**  | **0**  | **0**  | **0**  | .01  | **0**  | **0**     |
+|                       | **C$\uparrow$** | .37  | .43  | .20  | .23  | .34  | **.08**  | .27     |
+|                       | **I$\downarrow$** | .51  | .57  | .80  | .64  | .66  | .71  | .65     |
+| **mistral-instruct**  | **N$\downarrow$** | .12  | **0**  | **0**  | .13  | **0**  | .22  | .08     |
+|                       | **C$\uparrow$** | .21  | .45  | .22  | .15  | .22  | .05  | .21     |
+|                       | **I$\downarrow$** | .76  | .55  | .78  | .81  | .79  | .93  | .77     |
+| **llama-2-chat**      | **N$\downarrow$** | .03  | **0**  | **0**  | .04  | **0**  | .02  | .02     |
+|                       | **C$\uparrow$** | .21  | .42  | .15  | .12  | .14  | .03  | .19     |
+|                       | **I$\downarrow$** | .77  | .58  | .85  | .88  | .86  | .94  | .79     |
+| **gemma-7b-it**       | **N$\downarrow$** | .02  | **0**  | **0**  | **0**  | **0**  | .03  | .01     |
+|                       | **C$\uparrow$** | .39  | .39  | .19  | .18  | .24  | .07  | .31     |
+|                       | **I$\downarrow$** | .61  | .61  | .81  | .82  | .76  | .93  | .69     |
+| **llama-3-8b**        | **N$\downarrow$** | .01  | **0**  | **0**  | **0**  | **0**  | **0**  | **0**     |
+|                       | **C$\uparrow$** | .09  | **.49**  | .37  | .10  | .01  | .01  | .14     |
+|                       | **I$\downarrow$** | **.16**  | .47  | **.31**  | **.27**  | **.03**  | .53  | **.24**     |
+| **phi-3-medium**      | **N$\downarrow$** | .74  | .05  | .33  | .63  | .96  | .46  | .62     |
+|                       | **C$\uparrow$** | .33  | .34  | .29  | .18  | .29  | .03  | .28     |
+|                       | **I$\downarrow$** | .61  | .64  | .71  | .82  | .71  | .94  | .68     |
+| **mixtral-8x7b**      | **N$\downarrow$** | .07  | .02  | **0**  | **0**  | **0**  | .03  | .04     |
+|                       | **C$\uparrow$** | **.40**  | .37  | **.55**  | **.37**  | **.38**  | .01  | **.37**     |
+|                       | **I$\downarrow$** | .60  | .63  | .45  | .63  | .62  | .99  | .63     |
+| **llama-3-70b**       | **N$\downarrow$** | **0**  | **0**  | **0**  | **0**  | **0**  | **0**  | **0**     |
+|                       | **C$\uparrow$** | .27  | .39  | .16  | .19  | .12  | 0    | .19     |
+|                       | **I$\downarrow$** | .72  | .61  | .84  | .81  | .88  | .99  | .81     |
+| **gpt-3.5-turbo**     | **N$\downarrow$** | .01  | **0**  | **0**  | **0**  | .01  | .01  | .01     |
+|                       | **C$\uparrow$** | .29  | .02  | 0    | .29  | 0    | .01  | .10     |
+|                       | **I$\downarrow$** | .35  | .98  | 1.00  | .50  | 1.00  | **.12**  | .66     |
+| **gpt-4**             | **N$\downarrow$** | .36  | **0**  | **0**  | .21  | **0**  | .87  | .24     |
+|                       | **C$\uparrow$** | .29  | .38  | .34  | .15  | 0    | 0    | .19     |
+|                       | **I$\downarrow$** | .71  | .62  | .66  | .85  | .99  | 1.00  | .80     |
+| **gemini-pro**        | **N$\downarrow$** | **0**  | **0**  | **0**  | **0**  | .01  | **0**  | **0**     |
+
+
 <div align="center">
   <img src="./plots/zeroshot.png" alt="zeroshot">
 </div>
@@ -44,7 +84,7 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
 <div align="center">
   <img src="./plots/DB-C.jpg" alt="correct">
 </div>
-Correct **(C)** evaluations from Zero-Shot Evaluations on the DB-MCQs for the time-span from years 1947 to 2022.
+Correct C evaluations from Zero-Shot Evaluations on the DB-MCQs for the time-span from years 1947 to 2022.
 
 ## After fine tuning
 We have performed model fine-tuning in three different paradigms:
