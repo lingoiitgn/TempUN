@@ -5,12 +5,12 @@ Dataset Link: [Drive](https://drive.google.com/drive/u/2/folders/1ci_Ni4ab5fQ5-x
 
 <p align="center">
   <img src="./plots/TempUN.png" alt="TempUN"><br>
-  <em>The number of samples for each category in the TempUN dataset.</em>
+  <em>The number of samples for each category in the <strong>TempUN</strong> dataset.</em>
 </p>
 
 <p align="center">
   <img src="./plots/TempUNs.png" alt="TempUNs"><br>
-  <em>The number of prompts for each category for different metrics in the TempUN<sub>s</sub> dataset.</em>
+  <em>The number of prompts for each category for different metrics in the <strong>TempUN<sub>s</sub></strong> dataset.</em>
 </p>
 
 # Inference
