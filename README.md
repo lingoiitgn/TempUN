@@ -74,6 +74,88 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
 | **gemini-pro**        | **I ↓**     | .71  | .62  | .66  | .85  | .99  | 1.00  | .80     |
 |                       | **N ↓**     | **0** | **0** | **0** | **0** | .01  | **0** | **0** |
 
+<table>
+  <tr>
+    <th>Models</th>
+    <th>Generation</th>
+    <th>DB</th>
+    <th>CP</th>
+    <th>WB</th>
+    <th>MM</th>
+    <th>RB</th>
+    <th>TB</th>
+    <th>Average</th>
+  </tr>
+  <tr>
+    <td rowspan="3"><b>phi-2</b></td>
+    <td><b>C &uarr;</b></td>
+    <td>.11</td>
+    <td>0</td>
+    <td>.18</td>
+    <td>.08</td>
+    <td>.09</td>
+    <td>.06</td>
+    <td>.09</td>
+  </tr>
+  <tr>
+    <td><b>I &darr;</b></td>
+    <td>.89</td>
+    <td>.97</td>
+    <td>.82</td>
+    <td>.92</td>
+    <td>.89</td>
+    <td>.93</td>
+    <td>.90</td>
+  </tr>
+  <tr>
+    <td><b>N &darr;</b></td>
+    <td><b>0</b></td>
+    <td>.03</td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td>.02</td>
+    <td>.01</td>
+    <td>.01</td>
+  </tr>
+  <tr>
+    <td colspan="9"><hr></td>
+  </tr>
+  <tr>
+    <td rowspan="3"><b>flan-t5-xl</b></td>
+    <td><b>C &uarr;</b></td>
+    <td>.38</td>
+    <td>.40</td>
+    <td>.20</td>
+    <td>.24</td>
+    <td>.20</td>
+    <td>.03</td>
+    <td>.30</td>
+  </tr>
+  <tr>
+    <td><b>I &darr;</b></td>
+    <td>.62</td>
+    <td>.60</td>
+    <td>.80</td>
+    <td>.76</td>
+    <td>.79</td>
+    <td>.97</td>
+    <td>.69</td>
+  </tr>
+  <tr>
+    <td><b>N &darr;</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+    <td>.01</td>
+    <td><b>0</b></td>
+    <td><b>0</b></td>
+  </tr>
+  <tr>
+    <td colspan="9"><hr></td>
+  </tr>
+  <!-- Continue similarly for other models -->
+</table>
 
 
 <div align="center">
