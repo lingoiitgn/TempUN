@@ -18,7 +18,11 @@ We have utillized transformers for getting inference from `flan-t5-xl`, and `phi
     CUDA_VISIBLE_DEVICES=0 python inf_transformers.py --hub-model-name microsoft/Phi-3-medium-128k-instruct --base-dir /path_to_csvs --out-dir /path_to_results --year 1947
 
 #### Using Groq:
-gemma-1.1-7b-it, Meta-Llama-3-8B-Instruct, Mixtral-8x7B-Instruct-v0.1, Meta-Llama-3-70B-Instruct, 
+We have utillized transformers for getting inference from `gemma-1.1-7b-it`, `Meta-Llama-3-8B-Instruct`, `Mixtral-8x7B-Instruct-v0.1`, and `Meta-Llama-3-70B-Instruct`. The code for inference is located in the `inference/zeroshot/inf_groq.py` file. To get inference run below command:
+
+    python inf_groq.py --base-dir /path_to_csvs --out-dir /path_to_results --year 1947
+
+- Change the model in the script to run the inference for the desired LLM.
 
 ### Closed-source models:
 gpt-3.5-turbo, gpt-4, and gemini-pro
