@@ -480,7 +480,7 @@ To get inference results, follow these steps:
        python run_full.py --model /path_to_saved_model_from_step_2
 
 <p align="center">
-  <img src="./plots/after_finetuning.jpg" alt="FT"><br>
+  <img src="./plots/after_finetuning.png" alt="FT"><br>
   <em>Comparative performance of LLMs for different MCQ categories under <strong>Yearwise Finetuning</strong>, <strong>Continual Learning</strong>, and <strong>Random Finetuning</strong> settings. Here, <strong>‘C’</strong> (Correct), <strong>‘I’</strong> (Incorrect), and <strong>‘N’</strong> (Information Not Available) represent the percentage of correct generations, incorrect generations, and LLMs generation of information not available, respectively. We <strong>bold</strong> the highest values for <strong>‘C’</strong>, and lowest values for <strong>‘I’</strong> and <strong>‘N’</strong> categories.</em>
 </p>
 
