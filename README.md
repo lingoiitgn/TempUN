@@ -40,7 +40,7 @@ We have performed inference on three closed-source models: `gpt-3.5-turbo`, `gpt
 </div>
 
 <div align="center">
-  <img src="./plots/DB-C.png" alt="correct">
+  <img src="./plots/DB-C.pdf" alt="correct">
 </div>
 
 ## After fine tuning
