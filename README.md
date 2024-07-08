@@ -501,4 +501,4 @@ We have performed model fine-tuning in three different paradigms: **Yearwise Fin
 - The codes for **Continual Learning (CL)** are located in `fine-tuning/CL` directory.
 - The codes for **Random Fine-Tuning (R-FT)** are located in `fine-tuning/R-FT` directory.
 
-More Details in the paper (Link Coming soon)
+More Details in the paper [paper link](https://arxiv.org/abs/2402.11997)
