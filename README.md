@@ -3,6 +3,8 @@ We introduce **TempUN**, an extensive and balanced dataset ranging from 10,000 B
 
 Dataset Link: [Drive](https://drive.google.com/drive/u/2/folders/1ci_Ni4ab5fQ5-x4Ly9n_FW9_rlBOKqiM)
 
+We calculate the number of instances and samples with the command ```find . -name "*.csv" -exec wc -l {} +```.
+
 <p align="center">
   <img src="./plots/TempUN.png" alt="TempUN"><br>
   <em>The number of samples for each category in the <strong>TempUN</strong> dataset.</em>
@@ -502,3 +504,13 @@ We have performed model fine-tuning in three different paradigms: **Yearwise Fin
 - The codes for **Random Fine-Tuning (R-FT)** are located in `fine-tuning/R-FT` directory.
 
 More Details in the paper [(paper link)](https://arxiv.org/abs/2402.11997)
+
+# Citations
+```
+@article{beniwal2024remember,
+  title={Remember This Event That Year? Assessing Temporal Information and Reasoning in Large Language Models},
+  author={Beniwal, Himanshu and Singh, Mayank and others},
+  journal={arXiv preprint arXiv:2402.11997},
+  year={2024}
+}
+```
